@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>Drupal</name>
+    <version>1.2</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/copyleft/gpl.html">GNU General Public License (GPL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Drupal CMS full integration</summary>
+    <description>Drupal extension is a set of Core API extensions that offers a full access for Drupal modules (magento_* that can be downloaded here : ....) to Orders, Catalog and so on. 
+
+This extension, will offer you to TOTALLY bypass Magento front office, using Drupal instead. 
+
+When a new user is created a Magento user is automatically created also. 
+Orders can be created from Drupal, cart is managed from Drupal. 
+Catalog is syncrhonized, so each Magento Product is a Drupal node that you can push into Views, etc....
+We're actually porting some paiement gateways (Paypal) so paiement process remains in Drupal also.</description>
+    <notes>Release</notes>
+    <authors><author><name>Maxime Topolov</name><user>auto-converted</user><email>mtopolov@adyax.com</email></author></authors>
+    <date>2009-06-04</date>
+    <time>10:42:44</time>
+    <contents><target name="mage"><dir name="app"><dir name="etc"><dir name="modules"><file name="Drupal_ApiExtend.xml" hash="6a8e6e15bb4460cb5ae0cb1e465b0231"/></dir></dir></dir></target><target name="magelocal"><dir name="Drupal"><dir name="ApiExtend"><dir name="etc"><file name="api.xml" hash="554e289ada571e902f6f6d6c1a8b7c66"/><file name="config.xml" hash="2ed5c4693f9772b6ed504097e87905e4"/><file name="system.xml" hash="4902f86ff5e699e132dd186c8b71b1bd"/></dir><dir name="Model"><dir name="Catalog"><file name="Api.php" hash="c7999af52f7f618cbf36caa853eb5062"/></dir><dir name="Config"><file name="Api.php" hash="98211f226eac5be82d3ec878af10bcdf"/></dir><dir name="Mysql4"><file name="Rule.php" hash="839815f11690e17c6464531bae2cdd8c"/></dir><dir name="Order"><file name="Api.php" hash="22272264b39098d343f5a3a0c6d56ea0"/></dir><dir name="Payment"><file name="Api.php" hash="c3bc41714b8617e195b3643e61bc8c27"/></dir><dir name="Quote"><file name="Api.php" hash="14509619244622238b41fbc01c0ff10f"/></dir><dir name="Rule"><file name="Api.php" hash="4708b97baba86bb993c0c4da9966b5a8"/></dir><dir name="Shipment"><file name="Api.php" hash="a17d2e6e6baf11046be2b8834b8e6b19"/></dir><file name="Observer.php" hash="200578174a90852968a494e6903cc71e"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

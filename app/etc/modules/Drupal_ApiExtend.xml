@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Drupal_ApiExtend>
+            <active>true</active>
+            <codePool>local</codePool>
+            <version>0.0.1</version>
+        </Drupal_ApiExtend>
+    </modules>
+</config>

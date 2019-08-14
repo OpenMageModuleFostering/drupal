@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <shipment translate="title" module="ApiExtend">
+                <model>ApiExtend/shipment_api</model>
+                <title>Shipment methods Api</title>
+                <methods>
+                    <list translate="title" module="ApiExtend">
+                        <title>Retrieve shipment methods</title>
+                        <method>items</method>
+                        <acl>ApiExtend/shipment</acl>
+                    </list>
+                </methods>
+            </shipment>
+            <payment translate="title" module="ApiExtend">
+                <model>ApiExtend/payment_api</model>
+                <title>Active Payment methods Api</title>
+                <methods>
+                    <list translate="title" module="ApiExtend">
+                        <title>Retrieve active payment methods</title>
+                        <method>items</method>
+                        <acl>ApiExtend/payment</acl>
+                    </list>
+                    <paypal_wps_account_info>
+                        <title>Retrieve PayPal Website Payments Standard account info</title>
+                        <method>PayPalWPSAccount</method>
+                        <acl>ApiExtend/payment</acl>
+                    </paypal_wps_account_info>
+                </methods>
+            </payment>
+            <quote translate="title" module="ApiExtend">
+                <model>ApiExtend/quote_api</model>
+                <title>Quote Api</title>
+                <methods>
+                    <create translate="title" module="ApiExtend">
+                        <title>Create Quote</title>
+                        <method>create</method>
+                        <acl>ApiExtend/quote</acl>
+                    </create>
+                </methods>
+            </quote>
+            <ext_order translate="title" module="ApiExtend">
+                <model>ApiExtend/order_api</model>
+                <title>Order Api</title>
+                <methods>
+                    <create translate="title" module="ApiExtend">
+                        <title>Create Order</title>
+                        <method>create</method>
+                        <acl>ApiExtend/order</acl>
+                    </create>
+                </methods>
+            </ext_order>
+            <config translate="title" module="ApiExtend">
+                <model>ApiExtend/config_api</model>
+                <title>Config API</title>
+                <methods>
+                    <info translate="title" module="ApiExtend">
+                        <title>Retrieve Magento config value</title>
+                        <method>info</method>
+                        <acl>ApiExtend/config</acl>
+                    </info>
+                    <websites translate="title" module="ApiExtend">
+                        <title>Retrieve Magento Websites list</title>
+                        <method>websites</method>
+                        <acl>ApiExtend/config</acl>
+                    </websites>
+                    <stores translate="title" module="ApiExtend">
+                        <title>Retrieve Magento Stores list</title>
+                        <method>stores</method>
+                        <acl>ApiExtend/config</acl>
+                    </stores>
+                    <storeViews translate="title" module="ApiExtend">
+                        <title>Retrieve Magento Store Views list</title>
+                        <method>storeViews</method>
+                        <acl>ApiExtend/config</acl>
+                    </storeViews>
+                </methods>
+            </config>
+            <catalog translate="title" module="ApiExtend">
+                <model>ApiExtend/catalog_api</model>
+                <title>Catalog API</title>
+                <methods>
+                    <productsList translate="title" module="ApiExtend">
+                        <title>Retrieve Magento products list</title>
+                        <method>productsList</method>
+                        <acl>ApiExtend/catalog</acl>
+                    </productsList>
+                    <productFullInfo translate="title" module="ApiExtend">
+                        <title>Retrieve Magento product full info</title>
+                        <method>productFullInfo</method>
+                        <acl>ApiExtend/catalog</acl>
+                    </productFullInfo>
+		    <productActualPrice translate="title" module="ApiExtend">
+                        <title>Retrieve Magento product actual price</title>
+                        <method>productActualPrice</method>
+                        <acl>ApiExtend/catalog</acl>
+                    </productActualPrice>
+                </methods>
+                <faults module="ApiExtend">
+                    <store_not_exists>
+                        <code>100</code>
+                        <message>Requested store view not found.</message>
+                    </store_not_exists>
+                    <filters_invalid>
+                        <code>101</code>
+                        <message>Invalid filters specified. Details in error message.</message>
+                    </filters_invalid>
+                    <not_exists>
+                        <code>102</code>
+                        <message>Product not exists.</message>
+                    </not_exists>
+                </faults>
+            </catalog>
+	    	<rule translate="title" module="ApiExtend">
+                <model>ApiExtend/rule_api</model>
+                <title>Rule API</title>
+                <methods>
+                    <rulesList translate="title" module="ApiExtend">
+                        <title>Retrieve Magento rules list</title>
+                        <method>rulesList</method>
+                        <acl>ApiExtend/rule</acl>
+                    </rulesList>
+                </methods>
+                <faults module="ApiExtend">
+                    <store_not_exists>
+                        <code>100</code>
+                        <message>Requested store view not found.</message>
+                    </store_not_exists>
+                </faults>
+            </rule>
+        </resources>
+        <acl>
+            <resources>
+                <ApiExtend translate="title" module="ApiExtend">
+                    <title>API Extend</title>
+                    <sort_order>3</sort_order>
+                    <shipment translate="title" module="ApiExtend">
+                        <title>Shipment</title>
+                    </shipment>
+                    <payment translate="title" module="ApiExtend">
+                        <title>Payment</title>
+                    </payment>
+                    <quote translate="title" module="ApiExtend">
+                        <title>Quote</title>
+                    </quote>
+                    <order translate="title" module="ApiExtend">
+                        <title>Order</title>
+                    </order>
+                    <config translate="title" module="ApiExtend">
+                        <title>Config</title>
+                    </config>
+                    <catalog translate="title" module="ApiExtend">
+                        <title>Catalog</title>
+                    </catalog>
+		    <rule translate="title" module="ApiExtend">
+                        <title>Rules</title>
+                    </rule>
+                </ApiExtend>
+            </resources>
+        </acl>
+    </api>
+</config>
