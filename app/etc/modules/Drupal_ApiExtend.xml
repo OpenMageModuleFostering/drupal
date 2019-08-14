@@ -3,8 +3,8 @@
     <modules>
         <Drupal_ApiExtend>
             <active>true</active>
-            <codePool>local</codePool>
-            <version>0.0.1</version>
+            <codePool>community</codePool>
+            <version>1.2.3</version>
         </Drupal_ApiExtend>
     </modules>
 </config>
