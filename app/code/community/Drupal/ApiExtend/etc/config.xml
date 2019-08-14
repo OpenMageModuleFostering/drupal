@@ -23,6 +23,11 @@
                 </connection>
             </ApiExtend_read>
         </resources>
+        <helpers>
+            <ApiExtend>
+                <class>Drupal_ApiExtend_Helper</class>
+            </ApiExtend>
+        </helpers>
     </global>
 	
     <default>
