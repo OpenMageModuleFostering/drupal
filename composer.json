@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Drupal",
+    "name": "OpenMageModuleFostering\/Drupal",
     "type": "magento-module",
     "license": "GNU-General-Public-License-(GPL)",
     "homepage": "",
     "description": "Drupal CMS full integration",
     "authors": [
-    {
-        "name": "Maxime Topolov",
-        "email": "mtopolov@adyax.com"
-    }
-],
+        {
+            "name": "Maxime Topolov",
+            "email": "mtopolov@adyax.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
